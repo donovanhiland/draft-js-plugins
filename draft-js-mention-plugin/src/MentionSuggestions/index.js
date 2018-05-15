@@ -229,6 +229,7 @@ export class MentionSuggestions extends Component {
     const newEditorState = addMention(
       this.props.store.getEditorState(),
       mention,
+      this.props.renderMention,
       this.props.mentionPrefix,
       this.props.mentionTrigger,
       this.props.entityMutability,
@@ -322,6 +323,7 @@ export class MentionSuggestions extends Component {
       positionSuggestions, // eslint-disable-line no-unused-vars
       mentionTrigger, // eslint-disable-line no-unused-vars
       mentionPrefix, // eslint-disable-line no-unused-vars
+      renderMention, // eslint-disable-line no-unused-vars
       ...elementProps } = this.props;
 
     return React.cloneElement(
